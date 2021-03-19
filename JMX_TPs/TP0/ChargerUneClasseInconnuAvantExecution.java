@@ -25,7 +25,7 @@ import java.lang.reflect.Method;
 public class ChargerUneClasseInconnuAvantExecution extends JFrame implements ActionListener {
     JTextArea text = new JTextArea();
     JScrollBar scrollBar = new JScrollBar();
-    JButton btnOpenClass = new JButton("ok");
+    JButton btnOpenClass = new JButton("Open Class");
     JButton increaseSize = new JButton("Increase Size");
     int i;
     int j;
@@ -56,7 +56,7 @@ public class ChargerUneClasseInconnuAvantExecution extends JFrame implements Act
 
 	increaseSize.addActionListener(this);
 
-	JButton btnOpenClass = new JButton("Open Class");
+	
 	btnOpenClass.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent arg0) {
 		ClassOpener co = new ClassOpener();
