@@ -1,4 +1,4 @@
-
+package TP6;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
