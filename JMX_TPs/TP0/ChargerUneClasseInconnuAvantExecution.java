@@ -94,7 +94,7 @@ public static void main(String arg[]){
 public void actionPerformed(ActionEvent ae) {
     Object source = ae.getSource();
     try {
-	    String nomClass="classestobecharged.Personne";
+	    String nomClass="classestobecharged.AClass";
 	    if(c==null) {
 	    c=Class.forName(nomClass);
 	    name=c.newInstance();
