@@ -7,6 +7,6 @@
 	<classpathentry kind="src" path="TP3Notification"/>
 	<classpathentry kind="src" path="TP4"/>
 	<classpathentry kind="src" path="TP5"/>
-	<classpathentry kind="src" path="TP0_reflexivity"/>
+	<classpathentry kind="src" path="TP6"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
