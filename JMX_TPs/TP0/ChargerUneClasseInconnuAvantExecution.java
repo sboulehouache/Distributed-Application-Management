@@ -102,6 +102,7 @@ public void actionPerformed(ActionEvent ae) {
 	    if(source==ok) {
 		System.out.println("ok");
 	    meth = c.getMethod("start"); 
+	    ok.setText(meth.getName());
 	    Object resultat = meth.invoke(name);
 	    }   
 	    if(source==increaseSize) {
