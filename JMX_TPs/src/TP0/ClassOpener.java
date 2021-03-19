@@ -10,7 +10,7 @@ public class ClassOpener {
 	public ClassOpener(){
 		JFileChooser fileChooser=new  JFileChooser();
 		fileChooser.setVisible(true);
-		fileChooser.setCurrentDirectory(new File("E:\\EclipseWorkSpace\\JMX_TPs\\TP0"));
+		fileChooser.setCurrentDirectory(new File("E:\\EclipseWorkSpace\\JMX_TPs\\src"));
 		if (fileChooser.showOpenDialog(null)==JFileChooser.APPROVE_OPTION) {
 			file=fileChooser.getSelectedFile();
 		}
