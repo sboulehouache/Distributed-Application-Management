@@ -63,8 +63,10 @@ public class ChargerUneClasseInconnuAvantExecution extends JFrame implements Act
 		classfile = co.file;
 		String classFileName = classfile.getName().substring(0, classfile.getName().length() - 5);
 		try {
+		    if(classFileName!="") {
 		    className = Class.forName(classFileName);
 		    objectName = className.newInstance();
+		    }
 		} catch (ClassNotFoundException e) {
 		    e.printStackTrace();
 		} catch (InstantiationException e) {
