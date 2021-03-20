@@ -1,10 +1,12 @@
-package TP6;
+
 
 /**
  *
  * @author souf
  */
 import javax.swing.JTextField;
+
+import TP6.ClassOpener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -22,7 +24,7 @@ import java.lang.reflect.Method;
 public class ChargerUneClasseInconnuAvantExecution extends JFrame implements ActionListener {
     JTextArea text = new JTextArea();
     JScrollBar scrollBar = new JScrollBar();
-    JButton btnOpenClass = new JButton("Open Class");
+    JButton btnOpenClass = new JButton("Open Class .java");
     JButton increaseSize = new JButton("Increase Size");
     int i;
     int j;
@@ -84,11 +86,12 @@ public class ChargerUneClasseInconnuAvantExecution extends JFrame implements Act
 	btnOpenClass.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent arg0) {
 		ClassOpener co = new ClassOpener();
+		System.out.println("bbb");
+		classfile = co.getFile();
 		try {
 		    if (classfile != null) {
-			classfile = co.file;
 			String classFileName = classfile.getName().substring(0, classfile.getName().length() - 5);
-
+			System.out.println("classFileName= "+classFileName);
 			className = Class.forName(classFileName);
 			objectName = className.newInstance();
 			increaseSize.setEnabled(true);

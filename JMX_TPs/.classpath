@@ -7,5 +7,6 @@
 	<classpathentry kind="src" path="TP3Notification"/>
 	<classpathentry kind="src" path="TP4"/>
 	<classpathentry kind="src" path="TP5"/>
+	<classpathentry kind="src" path="Ref"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

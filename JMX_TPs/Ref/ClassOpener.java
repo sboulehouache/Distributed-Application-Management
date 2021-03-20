@@ -1,4 +1,4 @@
-package TP6;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class ClassOpener {
 	public ClassOpener(){
 		JFileChooser fileChooser=new  JFileChooser();
 		fileChooser.setVisible(true);
-		fileChooser.setCurrentDirectory(new File("E:\\EclipseWorkSpace\\JMX_TPs\\bin"));
+		fileChooser.setCurrentDirectory(new File("E:\\EclipseWorkSpace\\JMX_TPs"));
 		if (fileChooser.showOpenDialog(null)==JFileChooser.APPROVE_OPTION) {
 			file=fileChooser.getSelectedFile();
 		}
