@@ -1,8 +1,4 @@
-package TP6.classestobecharged;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 /**
  *
@@ -50,4 +46,11 @@ public class AClass extends JFrame {
 	this.setTitle(s);
 	this.setVisible(true);
     }
+    public static void main(String arg[]) {
+	// Class c=ChargerUneClasseInconnuAvantExecution.class;
+
+	new AClass();
+
+    }
+
 }

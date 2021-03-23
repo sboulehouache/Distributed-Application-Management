@@ -15,7 +15,7 @@ import javax.management.NotificationBroadcasterSupport;
  *
  */
 public class Sensor extends NotificationBroadcasterSupport implements Sensor1MBean, Serializable{
-	private final int PERIOD;
+	private int PERIOD=0;
 	private double value=20.0;
 	private String message=null;
 	private int numeroSequence;
@@ -25,6 +25,7 @@ public class Sensor extends NotificationBroadcasterSupport implements Sensor1MBe
 	// Acquisition est une classe interne
 	// une simulation du capteur.
 	private Acquisition local;
+	public Sensor(){}
 	public Sensor(int period){
 	this.PERIOD = period;
 	local = this.new Acquisition();

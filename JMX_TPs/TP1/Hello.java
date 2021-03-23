@@ -8,6 +8,7 @@ public class Hello implements HelloMBean {
 private String message=null;
 private final String name = "Reginald";
 private int cacheSize = 2100;
+public Hello() { }
 public Hello(String message) { this.message=message; }
 
 public void sayHello() {
